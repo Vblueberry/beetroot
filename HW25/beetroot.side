@@ -1,0 +1,415 @@
+{
+  "id": "318cbe58-c541-44eb-9b09-637bce146453",
+  "version": "2.0",
+  "name": "beetroot",
+  "url": "https://makeup.com.ua/ua/",
+  "tests": [{
+    "id": "8b68e622-d3bc-4cb7-8975-67769b787f28",
+    "name": "Valid Autorization",
+    "commands": [{
+      "id": "2c4e041e-596a-4b7c-85df-0391e8cefc03",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c57de238-1124-41d0-bd23-888903eea7c6",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1363x724",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "d9033265-2928-4bf0-b8f6-6456c9aed07e",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "className=site-wrap",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e1310921-a382-413e-b677-d95e52b22578",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "css=.header-top > .layout > div > div",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b8ebc90a-918b-4742-b03a-3f2b6f97fbd5",
+      "comment": "",
+      "command": "verifyText",
+      "target": "xpath=/html/body/div[@class='site-wrap']/div[@class='main-wrap']//div[.='Вхід до кабінету']",
+      "targets": [],
+      "value": "Вхід до кабінету"
+    }, {
+      "id": "6868ab01-2261-4a27-99d0-14ffeaa763c4",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[@class='site-wrap']/div[@class='main-wrap']//div[.='Вхід до кабінету']",
+      "targets": [
+        ["css=.header-top > .layout > div > div", "css:finder"],
+        ["xpath=//header/div/div/div[3]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "73e0dcfb-d714-4bdc-81d9-fc42a60aec5b",
+      "comment": "",
+      "command": "verifyText",
+      "target": "/html//form[@id='form-auth']//h2[.='вхід до особистого кабінету']",
+      "targets": [],
+      "value": "ВХІД ДО ОСОБИСТОГО КАБІНЕТУ"
+    }, {
+      "id": "8d9d09c0-c392-4615-929f-8e95c92ef559",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@name='user_login']",
+      "targets": [
+        ["name=user_login", "name"],
+        ["css=.form-wrap:nth-child(4) .input-row:nth-child(2) .input", "css:finder"],
+        ["xpath=//input[@name='user_login']", "xpath:attributes"],
+        ["xpath=//form[@id='form-auth']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98fc5de2-8a46-4243-9c6e-0ac387bfc3ba",
+      "comment": "",
+      "command": "store",
+      "target": "shn87@ukr.net",
+      "targets": [],
+      "value": "eml"
+    }, {
+      "id": "23e4ef65-04a4-4725-9628-e4ad307bd210",
+      "comment": "",
+      "command": "store",
+      "target": "qwerty",
+      "targets": [],
+      "value": "psw"
+    }, {
+      "id": "1514c018-50d6-4585-b790-39476ae6f0f1",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_login",
+      "targets": [
+        ["name=user_login", "name"],
+        ["css=.form-wrap:nth-child(4) .input-row:nth-child(2) .input", "css:finder"],
+        ["xpath=//input[@name='user_login']", "xpath:attributes"],
+        ["xpath=//form[@id='form-auth']/div/div[2]/div/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/input", "xpath:position"]
+      ],
+      "value": "${eml}"
+    }, {
+      "id": "a557cb63-3c29-4fd8-8e02-7782a00bf855",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//input[@name='user_pw']",
+      "targets": [
+        ["name=user_pw", "name"],
+        ["css=.form-wrap:nth-child(4) .input-row:nth-child(3) .input", "css:finder"],
+        ["xpath=//input[@name='user_pw']", "xpath:attributes"],
+        ["xpath=//form[@id='form-auth']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "5f824ece-95ad-491a-9fc0-807d0e473623",
+      "comment": "",
+      "command": "type",
+      "target": "name=user_pw",
+      "targets": [
+        ["name=user_pw", "name"],
+        ["css=.form-wrap:nth-child(4) .input-row:nth-child(3) .input", "css:finder"],
+        ["xpath=//input[@name='user_pw']", "xpath:attributes"],
+        ["xpath=//form[@id='form-auth']/div/div[2]/div[2]/div/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/input", "xpath:position"]
+      ],
+      "value": "${psw}"
+    }, {
+      "id": "906ee98b-a8e4-435a-a062-f75840e18373",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=//button[contains(text(),'Увійти')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a11e91ef-0c13-48b7-8043-aff6533a3afb",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[3]/button",
+      "targets": [
+        ["css=.input-row:nth-child(4) > .button", "css:finder"],
+        ["xpath=(//button[@type='submit'])[3]", "xpath:attributes"],
+        ["xpath=//form[@id='form-auth']/div/div[2]/div[3]/button", "xpath:idRelative"],
+        ["xpath=//div[3]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "9460fa2f-5674-48bf-9951-317740d01fd1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Кабінет",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "aef37ad0-3b47-4680-9703-7d12b3c982bc",
+      "comment": "",
+      "command": "verifyValue",
+      "target": "id=name",
+      "targets": [],
+      "value": "Катерина"
+    }, {
+      "id": "d98915b9-6bb6-4b46-b680-9b32c0ef8295",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "xpath=/html//input[@id='password']",
+      "targets": [],
+      "value": "qwerty"
+    }, {
+      "id": "da07a065-d4ab-4da1-b48d-32b1664f39cf",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "//button[contains(text(),'Видалити')]",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e3b672a4-e1c7-4001-a696-7d5aa2f7aea4",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Вихід",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "02655bb8-55e5-49d8-94c3-b3c46e4c1742",
+    "name": "Add to the cart",
+    "commands": [{
+      "id": "6054d441-a2f7-49df-a03a-a3c872f2e437",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "11662a14-6929-4827-9f56-25899853a1b2",
+      "comment": "",
+      "command": "store",
+      "target": "1363x724",
+      "targets": [],
+      "value": "var"
+    }, {
+      "id": "7e93a670-9f6b-449c-b1b7-b6aa2b37a0f2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "${var}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "25441ad4-9a9c-46db-81cb-24b379d8b498",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Парфумерія",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "f3afd5f5-469b-4bcf-9f32-231033ac84a6",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,780)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "41bac5a4-a94f-43d0-b03e-9387bf32e01f",
+      "comment": "",
+      "command": "mouseOver",
+      "target": "xpath=/html/body/div[@class='site-wrap']/div[@class='main-wrap']//div[@class='catalog-content-wrap']/div[4]/div[@class='simple-slider']//ul[@class='simple-slider-list']/li[1]//div[@class='info-product-wrapper']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "dc68671e-a590-4790-8159-3978fbb5635d",
+      "comment": "",
+      "command": "verifyText",
+      "target": "css=.simple-slider-list-buttons:nth-child(2) > .button",
+      "targets": [],
+      "value": "КУПИТИ"
+    }, {
+      "id": "fbee7fa8-12ba-4c28-a1e4-3b186e753bb2",
+      "comment": "",
+      "command": "click",
+      "target": "css=.simple-slider-list-buttons:nth-child(2) > .button",
+      "targets": [
+        ["css=.active .button", "css:finder"],
+        ["xpath=//div[@id='slider-id-59017ea6-5e68-454d-89c9-9a25a7d7d1b5']/div/ul/li/div[2]/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2f5d1a82-2a75-405b-96a0-32c82cb1cf1f",
+      "comment": "",
+      "command": "click",
+      "target": "className=product-list__item",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9c57cd5-7bba-4f67-8867-f22e5c5506b9",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product__button-increase",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "db377f24-a4e0-4cee-b107-b57d7165fc85",
+      "comment": "",
+      "command": "click",
+      "target": "css=.product__button-increase",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "40469ec7-7607-4538-b2b3-8127635a7e52",
+      "comment": "",
+      "command": "assertElementNotPresent",
+      "target": "css=.product__header-desc1",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "56ce0d99-4dd9-4906-ac4b-016014bc5af6",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "css=.product__price",
+      "targets": [],
+      "value": "0"
+    }, {
+      "id": "635b3114-79dc-47c5-b417-a86a99044eac",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=/html/body/div[2]//div[@class='button']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "adfece85-6122-407c-8006-57b8c999a309",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=/html/body/div[2]//div[@class='popup-content']/div[@class='product-list-wrap']/ul/li[@class='product-list__item']//div[@class='product__button-remove']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e32c37e9-8b08-43b8-b922-12b2e6fc15cf",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "id=option-preview-52827",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "362ea401-fd76-4002-934b-0eaaa8a96834",
+    "name": "Search",
+    "commands": [{
+      "id": "403072fe-46d1-4e5c-97a4-6e51e0af4887",
+      "comment": "",
+      "command": "open",
+      "target": "/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "bd36fe64-70db-48d7-8c67-22dba2e31211",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1363x724",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "b53b503f-574d-484b-9855-ec7abf1ffc48",
+      "comment": "",
+      "command": "store",
+      "target": "Шампунь",
+      "targets": [],
+      "value": "var1"
+    }, {
+      "id": "d924c32f-f518-47de-8f17-24ccc5797aeb",
+      "comment": "",
+      "command": "type",
+      "target": "xpath=/html//input[@id='search-input']",
+      "targets": [],
+      "value": "${var1}"
+    }, {
+      "id": "146eab47-2073-499e-8acc-362dcf368fa8",
+      "comment": "",
+      "command": "assertElementPresent",
+      "target": "xpath=/html/body/div[@class='site-wrap']//div[@class='header-right']/div[2]/form[@action='/ua/search/']/button[@type='submit']",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c29f2bba-0e2d-4ddb-84c1-081d127255a7",
+      "comment": "",
+      "command": "click",
+      "target": "css=[action] .search-button",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a9aced32-a965-490c-a6d5-550c5edf8c8c",
+      "comment": "",
+      "command": "runScript",
+      "target": "window.scrollTo(0,700)",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "deed0658-9eb6-40f7-b9e7-da8c7c8efa81",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Сухий шампунь(200)",
+      "targets": [
+        ["id=popularinput-checkbox-2251-81691", "id"],
+        ["css=#popularinput-checkbox-2251-81691", "css:finder"],
+        ["xpath=//li[@id='popularinput-checkbox-2251-81691']", "xpath:attributes"],
+        ["xpath=//div[@id='filter-block-wrap']/div[2]/div/div/ul/li[3]", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/ul/li[3]", "xpath:position"],
+        ["xpath=//li[contains(.,'Сухий шампунь(200)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "fa8f0d3b-fdc4-43c3-a8cd-e2f73a3af6d8",
+      "comment": "",
+      "command": "verifyNotText",
+      "target": "className=selected-filter-list__item",
+      "targets": [],
+      "value": "Гель для душу"
+    }, {
+      "id": "120bb16a-692a-4afc-b63b-841aa4ab37bf",
+      "comment": "",
+      "command": "click",
+      "target": "id=popularinput-checkbox-2251-81691",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "50a5aee2-3995-404a-bece-03a76b98f863",
+      "comment": "",
+      "command": "click",
+      "target": "id=popularinput-checkbox-2251-22497",
+      "targets": [
+        ["id=popularinput-checkbox-2251-22497", "id"],
+        ["css=#popularinput-checkbox-2251-22497", "css:finder"],
+        ["xpath=//li[@id='popularinput-checkbox-2251-22497']", "xpath:attributes"],
+        ["xpath=//div[@id='filter-block-wrap']/div[2]/div/div/ul/li", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/div/div/ul/li", "xpath:position"],
+        ["xpath=//li[contains(.,'Гель для душу(435)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a954195e-af13-4787-94e5-457d7673e3cc",
+      "comment": "",
+      "command": "verifyText",
+      "target": "className=selected-filter-list__item",
+      "targets": [],
+      "value": "Гель для душу"
+    }]
+  }],
+  "suites": [{
+    "id": "74cb191e-cbbf-41c6-b262-9fed425fde35",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": []
+  }],
+  "urls": ["https://makeup.com.ua/ua/"],
+  "plugins": []
+}
